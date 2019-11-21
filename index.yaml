@@ -2,11 +2,79 @@ apiVersion: v1
 entries:
   wordpress:
   - apiVersion: v1
+    appVersion: 5.3.0
+    created: "2019-11-21T16:23:42.491577+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - wordpress-database
+      version: 7.x.x
+    description: Web publishing platform for building blogs and websites.
+    digest: 3079937fe33976d3fb28e192e76222336c1d8f35a783846a8246b78682b2cbae
+    home: http://www.wordpress.com/
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - wordpress
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    urls:
+    - wordpress-8.0.2.tgz
+    version: 8.0.2
+  - apiVersion: v1
+    appVersion: 5.3.0
+    created: "2019-11-21T16:23:42.487198+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - wordpress-database
+      version: 7.x.x
+    description: Web publishing platform for building blogs and websites.
+    digest: 91b4eb36cc2596b5590f158d9b91a36df28ff443561a053cf58fcf80a797aa5a
+    home: http://www.wordpress.com/
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - wordpress
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    urls:
+    - wordpress-8.0.1.tgz
+    version: 8.0.1
+  - apiVersion: v1
     appVersion: 1.0.2
-    created: "2019-11-05T05:24:16.806728569Z"
+    created: "2019-11-21T16:23:42.483118+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - wordpress-database
+      version: 6.x.x
     description: Our custom wordpress 1.0.2
     digest: acf0800b0e9fd63707b8114af57eefcfcb147dfca466203202b5a1290c328444
-    engine: gotpl
     home: http://www.wordpress.com/
     icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
     keywords:
@@ -28,10 +96,16 @@ entries:
     version: 1.0.2
   - apiVersion: v1
     appVersion: 1.0.1
-    created: "2019-11-05T05:24:16.804503506Z"
+    created: "2019-11-21T16:23:42.479489+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - wordpress-database
+      version: 6.x.x
     description: Our custom wordpress
     digest: 19fef039bb15f87661085f8ce5e28adbb8e57159c3c59a7a529ed59b7b973f39
-    engine: gotpl
     home: http://www.wordpress.com/
     icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
     keywords:
@@ -51,4 +125,4 @@ entries:
     urls:
     - wordpress-1.0.1.tgz
     version: 1.0.1
-generated: "2019-11-05T05:24:16.801389257Z"
+generated: "2019-11-21T16:23:42.47351+02:00"
